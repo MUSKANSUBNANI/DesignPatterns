@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Behavior\" />
+    <None Remove="Creation\" />
+    <None Remove="Structural\" />
+    <None Remove="Structural\Facade.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Behavioral\" />
+    <Folder Include="Creational\" />
+    <Folder Include="Structural\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Structural\Facade.cs" />
+  </ItemGroup>
+</Project>
